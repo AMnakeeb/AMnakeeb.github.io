@@ -17,9 +17,9 @@ Designed around a classic **Royal Enfield motorcycle aesthetic**, drawing direct
 
 ## 🌟 Key Features
 
-1. **Full-Bleed Motorcycle Hero with Ken Burns Drift**:
-   - Features `assets/bike.jpg` with slow subtle Ken Burns zoom and faint film-grain texture.
-   - Multi-stop vignette gradient ensuring text contrast remains WCAG AA compliant over the image.
+1. **Interactive 3D Background & Isolated Bike Showcase**:
+   - Clean, interactive 3D canvas background with smooth perspective depth and mouse parallax.
+   - Features `assets/bike-cutout.png` with transparent background cutout, metallic drop-shadow, and instant 3D design / bike toggle.
    - Cast-badge buttons with cream fill, chrome borders, and red hover state.
    - Kickstand/odometer inspired *"Cruise Down"* indicator.
 
@@ -58,15 +58,24 @@ Designed around a classic **Royal Enfield motorcycle aesthetic**, drawing direct
 portfolio/
 ├── index.html            # Semantic HTML5 single-page structure with SEO & OG tags
 ├── css/
-│   └── style.css         # Royal Enfield Heritage design system (colors, textures, rivets)
+│   └── style.css         # Royal Enfield Heritage design system (colors, textures, rivets, 2-card grid)
 ├── js/
-│   └── main.js           # Vanilla JS (Speedometer loader, fuel gauge, typewriter, scrollspy)
+│   └── main.js           # Vanilla JS (Speedometer loader, fuel gauge, 3D canvas, typewriter, scrollspy)
 ├── assets/
+│   ├── bike-cutout.png   # Transparent cutout of Royal Enfield Bullet 350 (background removed)
 │   ├── bike.jpg          # User's classic Royal Enfield motorcycle photograph
 │   ├── favicon.svg       # Custom brass & chrome heritage monogram crest
 │   └── Resume.pdf        # Verified downloadable resume document
 └── README.md             # Documentation & deployment guide
 ```
+
+---
+
+## 🛠️ Featured Engineering Projects
+1. **Multimodal Cognitive Load Detection and Adaptive Learning System for Online Education**:
+   - Team major project under VTU fusing gaze, facial blendshapes, rPPG, and typing signals via a cross-modal Transformer, with a local LLM adaptively rewriting learning content in real time.
+2. **AI-Driven Fish School Detection for Sustainable Fisheries**:
+   - Functional ML prototype analyzing real-time sonar data telemetry for fish school detection, with a comprehensive maritime ecosystem design (CNN/YOLO, LSTM forecasting, IoT pollution monitoring) and accompanying research paper.
 
 ---
 
