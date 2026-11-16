@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>A M Nakeeb | Software Developer &amp; AI/ML Engineer</title>
+  <meta name="title" content="A M Nakeeb | Software Developer &amp; AI/ML Engineer">
+  <meta name="description" content="Portfolio of A M Nakeeb, final-year B.E. student in Artificial Intelligence and Machine Learning at Yenepoya Institute of Technology, Mangalore. Strong foundation in Python, C, and applied AI/ML architectures, seeking a Software Developer role.">
+  <meta name="keywords" content="A M Nakeeb, Software Developer, AI/ML Engineer, Python, C, Machine Learning, Deep Learning, NLP, Yenepoya Institute of Technology, Mangalore, Royal Enfield Bullet 350">
+  <meta name="author" content="A M Nakeeb">
+  <meta name="theme-color" content="#0b0b0c">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://amnakeeb.github.io/">
+  <meta property="og:title" content="A M Nakeeb | Software Developer &amp; AI/ML Engineer">
+  <meta property="og:description" content="Final-year B.E. student in AI &amp; ML at Yenepoya Institute of Technology, Mangalore. Seeking Software Developer roles.">
+  <meta property="og:image" content="assets/bike.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://amnakeeb.github.io/">
+  <meta property="twitter:title" content="A M Nakeeb | Software Developer &amp; AI/ML Engineer">
+  <meta property="twitter:description" content="Final-year B.E. student in AI &amp; ML seeking Software Developer roles. Proficient in Python, C, and applied AI/ML architectures.">
+  <meta property="twitter:image" content="assets/bike.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Google Fonts: Playfair Display, Barlow & Barlow Condensed -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Persistent Interactive 3D Background Canvas -->
+  <canvas id="bg-3d-canvas" class="bg-3d-canvas" aria-hidden="true"></canvas>
+
+  <!-- ==========================================================================
+       Speedometer "Engine Start" Intro Loader
+       ========================================================================== -->
+  <div id="engine-loader" class="engine-loader" role="status" aria-label="Starting portfolio ignition">
+    <div class="speedo-dial">
+      <div class="speedo-ticks"></div>
+      <div class="speedo-numbers">
+        <span>0</span>
+        <span>70</span>
+        <span>140</span>
+      </div>
+      <div class="speedo-needle"></div>
+      <div class="speedo-cap"></div>
+    </div>
+
+    <div class="odometer-box">
+      <span class="odometer-digit">0</span>
+      <span class="odometer-digit">0</span>
+      <span class="odometer-digit">0</span>
+      <span class="odometer-digit">3</span>
+      <span class="odometer-digit">5</span>
+      <span class="odometer-digit">0</span>
+    </div>
+
+    <span class="loader-status">IGNITION &bull; BULLET 350</span>
+  </div>
+
+  <!-- ==========================================================================
+       Header & Navigation Bar (Cast Metal & Chrome)
+       ========================================================================== -->
+  <header class="header" role="banner">
+    <div class="container header-container">
+      <a href="#hero" class="logo" aria-label="A M Nakeeb Home">
+        <div class="logo-crest">N</div>
+        <div class="logo-text">
+          <span class="logo-name">A M Nakeeb</span>
+          <span class="logo-sub">EST. MANGALORE &bull; 2027</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-desktop" aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Navigation Toggle -->
+      <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Odometer / Fuel Gauge Scroll Progress Line -->
+    <div class="fuel-gauge-container" aria-hidden="true">
+      <div id="fuel-gauge-bar" class="fuel-gauge-bar"></div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation">
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Main Content
+       ========================================================================== -->
+  <main id="main-content">
+    
+    <!-- Hero Section (Featuring bike.jpg with Ken Burns & Dark Garage Vignette) -->
+    <section id="hero" class="hero">
+      <div class="hero-bg-container">
+        <img src="assets/bike.jpg" alt="A M Nakeeb's Classic Royal Enfield Motorcycle" class="hero-bike-img" fetchpriority="high">
+        <div class="hero-overlay"></div>
+        <div class="film-grain"></div>
+      </div>
+
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-top-row">
+            <div class="hero-badge-tag">
+              <span class="hero-status-pip"></span>
+              <span>Software Developer Candidate &bull; AI/ML Final Year</span>
+            </div>
+
+            <!-- 3D Design vs Photo Backdrop Switcher -->
+            <div class="hero-view-toggle" role="group" aria-label="Background Design Mode">
+              <button type="button" id="btn-toggle-3d" class="view-toggle-btn active" title="Interactive 3D Motorcycle Design">
+                <span class="btn-dot"></span>
+                <span>3D Model</span>
+              </button>
+              <button type="button" id="btn-toggle-photo" class="view-toggle-btn" title="View Garage Photograph">
+                <span class="btn-dot"></span>
+                <span>Photo</span>
+              </button>
+            </div>
+          </div>
+
+          <h1 class="hero-title">A M Nakeeb</h1>
+
+          <div class="hero-tagline-wrapper" aria-label="Tagline">
+            <span id="typed-text" class="typed-text"></span>
+            <span class="typed-cursor" aria-hidden="true">|</span>
+          </div>
+
+          <p class="hero-intro">
+            Final-year Artificial Intelligence &amp; Machine Learning engineering student building robust software, dependable backend logic, and intelligent systems.
+          </p>
+
+          <div class="btn-group">
+            <a href="#projects" class="btn btn-badge-primary">
+              <span>View Projects</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+              </svg>
+            </a>
+
+            <a href="assets/Resume.pdf" class="btn btn-badge-secondary" download="A_M_Nakeeb_Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <span>Download Resume</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+              </svg>
+            </a>
+
+            <a href="#contact" class="btn btn-badge-ghost">
+              <span>Contact Me</span>
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <span class="hero-socials-label">Connect:</span>
+            <div class="social-links">
+              <a href="https://github.com/AMnakeeb" class="social-icon-btn" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+              </a>
+
+              <a href="https://linkedin.com/in/a-m-nakeeb-72b490292" class="social-icon-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                </svg>
+              </a>
+
+              <a href="mailto:nakeeb.201@gmail.com" class="social-icon-btn" aria-label="Send Direct Email">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <a href="#about" class="hero-scroll-indicator" aria-label="Scroll to About Section">
+            <span>Cruise Down</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         About Section (Cast Metal Plate Styling)
+         ========================================================================== -->
+    <section id="about" class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">01 // The Rider &amp; Engineer</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-description">
+            Applying structured problem-solving, clean code discipline, and machine learning insight to build dependable software.
+          </p>
+          <div class="section-divider" aria-hidden="true">
+            <span class="divider-line"></span>
+            <span class="divider-medallion"></span>
+            <span class="divider-line"></span>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal delay-1">
+            <p>
+              I am a final-year <strong>Bachelor of Engineering student in Artificial Intelligence and Machine Learning</strong> at Yenepoya Institute of Technology, Mangalore. My academic journey has given me hands-on project experience and a strong engineering foundation in <strong>Python</strong>, <strong>C</strong>, and core <strong>AI/ML paradigms</strong>.
+            </p>
+            <p>
+              Throughout my degree, I have worked on complex, real-world engineering projects—ranging from multimodal Transformer architectures fusing physiological and computer vision signals, to sonar telemetry processing and healthcare consultation systems powered by large language models.
+            </p>
+            <p>
+              I am actively seeking a <strong>Software Developer role</strong> where I can apply my analytical skills, dedication to maintainable code, and problem-solving mindset to build impactful products within a collaborative engineering team.
+            </p>
+          </div>
+
+          <div class="about-cards-grid reveal delay-2">
+            <div class="info-plate">
+              <div class="info-plate-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+                </svg>
+              </div>
+              <span class="info-plate-label">Base Location</span>
+              <span class="info-plate-value">Mangalore, India</span>
+            </div>
+
+            <div class="info-plate">
+              <div class="info-plate-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
+                </svg>
+              </div>
+              <span class="info-plate-label">Degree</span>
+              <span class="info-plate-value">B.E. in AI &amp; ML</span>
+            </div>
+
+            <div class="info-plate">
+              <div class="info-plate-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                </svg>
+              </div>
+              <span class="info-plate-label">Primary Languages</span>
+              <span class="info-plate-value">Python &amp; C</span>
+            </div>
+
+            <div class="info-plate">
+              <div class="info-plate-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/>
+                </svg>
+              </div>
+              <span class="info-plate-label">Target Role</span>
+              <span class="info-plate-value">Software Developer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Skills Section (Gauge / Dial-Inspired Console Badges)
+         ========================================================================== -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">02 // Instrument Console</span>
+          <h2 class="section-title">Technical Competencies</h2>
+          <p class="section-description">
+            Grouped skills honed through academic rigor, applied engineering builds, and certified cloud and AI courses.
+          </p>
+          <div class="section-divider" aria-hidden="true">
+            <span class="divider-line"></span>
+            <span class="divider-medallion"></span>
+            <span class="divider-line"></span>
+          </div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Console 1: Languages -->
+          <div class="skill-console-card tank-badge-card reveal delay-1">
+            <span class="rivet rivet-tl"></span><span class="rivet rivet-tr"></span>
+            <span class="rivet rivet-bl"></span><span class="rivet rivet-br"></span>
+
+            <div class="skill-console-header">
+              <div class="skill-console-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                </svg>
+              </div>
+              <h3 class="skill-console-title">Programming Languages</h3>
+            </div>
+            <div class="skill-dials">
+              <span class="skill-dial">
+                <span class="dial-pip"></span>
+                Python
+              </span>
+              <span class="skill-dial">
+                <span class="dial-pip"></span>
+                C
+              </span>
+            </div>
+          </div>
+
+          <!-- Console 2: Domains -->
+          <div class="skill-console-card tank-badge-card reveal delay-2">
+            <span class="rivet rivet-tl"></span><span class="rivet rivet-tr"></span>
+            <span class="rivet rivet-bl"></span><span class="rivet rivet-br"></span>
+
+            <div class="skill-console-header">
+              <div class="skill-console-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2M7.5 13A2.5 2.5 0 0 0 5 15.5a2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5A2.5 2.5 0 0 0 7.5 13m9 0a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5z"/>
+                </svg>
+              </div>
+              <h3 class="skill-console-title">Core Domains</h3>
+            </div>
+            <div class="skill-dials">
+              <span class="skill-dial">
+                <span class="dial-pip"></span>
+                Artificial Intelligence
+              </span>
+              <span class="skill-dial">
+                <span class="dial-pip"></span>
+                Machine Learning
+              </span>
+              <span class="skill-dial">
+                <span class="dial-pip"></span>
+                Deep Learning
+              </span>
+              <span class="skill-dial">
+                <span class="dial-pip"></span>
+                Natural Language Processing (NLP)
+              </span>
+            </div>
+          </div>
+
+          <!-- Console 3: Tools & Platforms -->
+          <div class="skill-console-card tank-badge-card reveal delay-3">
+            <span class="rivet rivet-tl"></span><span class="rivet rivet-tr"></span>
+            <span class="rivet rivet-bl"></span><span class="rivet rivet-br"></span>
+
+            <div class="skill-console-header">
+              <div class="skill-console-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/>
+                </svg>
+              </div>
+              <h3 class="skill-console-title">Tools &amp; Platforms</h3>
+            </div>
+            <div class="skill-dials">
+              <span class="skill-dial">
+                <span class="dial-pip"></span>
+                Microsoft Azure Fundamentals
+              </span>
+              <span class="skill-dial">
+                <span class="dial-pip"></span>
+                MongoDB
+              </span>
+              <span class="skill-dial">
+                <span class="dial-pip"></span>
+                Streamlit
+              </span>
+              <span class="skill-dial">
+                <span class="dial-pip"></span>
+                Google Gemini API
+              </span>
+            </div>
+          </div>
+
+          <!-- Console 4: Soft Skills -->
+          <div class="skill-console-card tank-badge-card reveal delay-4">
+            <span class="rivet rivet-tl"></span><span class="rivet rivet-tr"></span>
+            <span class="rivet rivet-bl"></span><span class="rivet rivet-br"></span>
+
+            <div class="skill-console-header">
+              <div class="skill-console-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                </svg>
+              </div>
+              <h3 class="skill-console-title">Professional &amp; Soft Skills</h3>
+            </div>
+            <div class="skill-dials">
+              <span class="skill-dial">
+                <span class="dial-pip"></span>
+                Problem-solving
+              </span>
+              <span class="skill-dial">
+                <span class="dial-pip"></span>
+                Teamwork
+              </span>
+              <span class="skill-dial">
+                <span class="dial-pip"></span>
+                Continuous Learning
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Projects Section (Tank Badge Styled Builds)
+         ========================================================================== -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">03 // Custom Builds</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-description">
+            Selected engineering builds demonstrating cross-modal AI architectures, signal processing, and full-stack intelligent systems.
+          </p>
+          <div class="section-divider" aria-hidden="true">
+            <span class="divider-line"></span>
+            <span class="divider-medallion"></span>
+            <span class="divider-line"></span>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-badge-card tank-badge-card reveal delay-1">
+            <span class="rivet rivet-tl"></span><span class="rivet rivet-tr"></span>
+            <span class="rivet rivet-bl"></span><span class="rivet rivet-br"></span>
+
+            <div class="project-card-main">
+              <div class="project-meta-top">
+                <span class="project-category-badge">Team Major Project &bull; Phase-II</span>
+                <span class="project-guide">Project Guide: <strong>Ms. M P Nisha</strong></span>
+              </div>
+
+              <h3 class="project-title">
+                Multimodal Cognitive Load Detection &amp; Adaptive Learning System for Online Education
+              </h3>
+
+              <p class="project-description">
+                An intelligent educational framework designed to quantify and respond to student cognitive load in real time. The system fuses multiple physiological and behavioral data streams—gaze tracking, facial blendshapes, remote photoplethysmography (rPPG), and keystroke/typing dynamics—using a cross-modal Transformer architecture. It integrates a local Large Language Model (LLM) that adaptively rewrites and simplifies educational content to alleviate learner fatigue and optimize comprehension.
+              </p>
+
+              <div class="project-metal-plates" aria-label="Technologies used">
+                <span class="metal-plate">Python</span>
+                <span class="metal-plate">Cross-Modal Transformers</span>
+                <span class="metal-plate">rPPG Signals</span>
+                <span class="metal-plate">Facial Blendshapes</span>
+                <span class="metal-plate">Gaze Tracking</span>
+                <span class="metal-plate">Local LLM</span>
+                <span class="metal-plate">NLP</span>
+              </div>
+            </div>
+
+            <div class="project-actions">
+              <a href="#" class="action-link" data-placeholder="TODO: add GitHub link" aria-label="View Project Source on GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+                <span>GitHub Repository</span>
+                <span class="placeholder-pill">TODO</span>
+              </a>
+
+              <a href="#" class="action-link" data-placeholder="TODO: add Demo link" aria-label="View Project Demo or Architecture">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+                </svg>
+                <span>Project Demo / Details</span>
+                <span class="placeholder-pill">TODO</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-badge-card tank-badge-card reveal delay-2">
+            <span class="rivet rivet-tl"></span><span class="rivet rivet-tr"></span>
+            <span class="rivet rivet-bl"></span><span class="rivet rivet-br"></span>
+
+            <div class="project-card-main">
+              <div class="project-meta-top">
+                <span class="project-category-badge">Functional Prototype &amp; Research Paper</span>
+                <span class="project-guide">Domain: <strong>Sustainable Marine Tech</strong></span>
+              </div>
+
+              <h3 class="project-title">
+                AI-Driven Fish School Detection for Sustainable Fisheries
+              </h3>
+
+              <p class="project-description">
+                Developed a functional machine learning prototype leveraging real-time sonar data telemetry to detect fish school locations, helping promote sustainable commercial fisheries and avoid overfishing. Extended this into a holistic maritime ecosystem architecture combining computer vision (CNN / YOLO) for surface vessel and marine life detection, LSTM networks for fish breeding and migration forecasting, and IoT sensor telemetry for marine pollution monitoring, supported by an accompanying research paper.
+              </p>
+
+              <div class="project-metal-plates" aria-label="Technologies used">
+                <span class="metal-plate">Python</span>
+                <span class="metal-plate">Machine Learning</span>
+                <span class="metal-plate">Sonar Processing</span>
+                <span class="metal-plate">CNN / YOLO</span>
+                <span class="metal-plate">LSTM Forecasting</span>
+                <span class="metal-plate">IoT Telemetry</span>
+                <span class="metal-plate">Research Paper</span>
+              </div>
+            </div>
+
+            <div class="project-actions">
+              <a href="#" class="action-link" data-placeholder="TODO: add GitHub link" aria-label="View Project Source on GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+                <span>GitHub Repository</span>
+                <span class="placeholder-pill">TODO</span>
+              </a>
+
+              <a href="#" class="action-link" data-placeholder="TODO: add Research Paper / Demo link" aria-label="View Research Paper or Demo">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+                </svg>
+                <span>Research Paper / Demo</span>
+                <span class="placeholder-pill">TODO</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-badge-card tank-badge-card reveal delay-3">
+            <span class="rivet rivet-tl"></span><span class="rivet rivet-tr"></span>
+            <span class="rivet rivet-bl"></span><span class="rivet rivet-br"></span>
+
+            <div class="project-card-main">
+              <div class="project-meta-top">
+                <span class="project-category-badge">AI Healthcare Assistant</span>
+                <span class="project-guide">Framework: <strong>Streamlit &amp; LLM</strong></span>
+              </div>
+
+              <h3 class="project-title">
+                HealthAssist: AI-Based Medical Consultation &amp; Report Summarization
+              </h3>
+
+              <p class="project-description">
+                An intelligent healthcare assistant application delivering NLP-based medical diagnostic report summarization and real-time symptom consultations. Built with Streamlit, open-source NLP libraries, and the Google Gemini Pro API. Designed with user-centric personalization, privacy-preserving safeguards for sensitive medical inputs, and an intelligent triage rule-engine for detecting critical emergency cases.
+              </p>
+
+              <div class="project-metal-plates" aria-label="Technologies used">
+                <span class="metal-plate">Python</span>
+                <span class="metal-plate">Streamlit</span>
+                <span class="metal-plate">Gemini Pro API</span>
+                <span class="metal-plate">NLP</span>
+                <span class="metal-plate">Data Privacy</span>
+                <span class="metal-plate">Emergency Triage</span>
+              </div>
+            </div>
+
+            <div class="project-actions">
+              <a href="#" class="action-link" data-placeholder="TODO: add GitHub link" aria-label="View Project Source on GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+                <span>GitHub Repository</span>
+                <span class="placeholder-pill">TODO</span>
+              </a>
+
+              <a href="#" class="action-link" data-placeholder="TODO: add Live App link" aria-label="View Live Streamlit Application">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+                </svg>
+                <span>Live Streamlit App</span>
+                <span class="placeholder-pill">TODO</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Education Section (Highway Milestone Timeline)
+         ========================================================================== -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">04 // The Highway Logbook</span>
+          <h2 class="section-title">Education</h2>
+          <p class="section-description">
+            Academic milestones marking steady progression in engineering foundations and analytical discipline.
+          </p>
+          <div class="section-divider" aria-hidden="true">
+            <span class="divider-line"></span>
+            <span class="divider-medallion"></span>
+            <span class="divider-line"></span>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <!-- Milestone 1: B.E. -->
+          <div class="timeline-item reveal delay-1">
+            <div class="milestone-marker" aria-hidden="true">
+              <div class="milestone-cap"></div>
+              <div class="milestone-body">2027</div>
+            </div>
+            <div class="timeline-content tank-badge-card">
+              <span class="rivet rivet-tl"></span><span class="rivet rivet-tr"></span>
+              <span class="rivet rivet-bl"></span><span class="rivet rivet-br"></span>
+              <span class="timeline-period">2023 &ndash; Expected 2027 (Final Year)</span>
+              <h3 class="timeline-degree">Bachelor of Engineering (B.E.) in Artificial Intelligence &amp; Machine Learning</h3>
+              <p class="timeline-institution">Yenepoya Institute of Technology, Mangalore, Karnataka</p>
+              <div class="timeline-score">
+                <span>Cumulative Performance:</span>
+                <strong>CGPA 7.23</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 2: PUC -->
+          <div class="timeline-item reveal delay-2">
+            <div class="milestone-marker" aria-hidden="true">
+              <div class="milestone-cap"></div>
+              <div class="milestone-body">PUC</div>
+            </div>
+            <div class="timeline-content tank-badge-card">
+              <span class="rivet rivet-tl"></span><span class="rivet rivet-tr"></span>
+              <span class="rivet rivet-bl"></span><span class="rivet rivet-br"></span>
+              <span class="timeline-period">Higher Secondary Education</span>
+              <h3 class="timeline-degree">Pre-University Course (PUC)</h3>
+              <p class="timeline-institution">Karnataka State Pre-University Board</p>
+              <div class="timeline-score">
+                <span>Academic Score:</span>
+                <strong>60.33%</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 3: SSLC -->
+          <div class="timeline-item reveal delay-3">
+            <div class="milestone-marker" aria-hidden="true">
+              <div class="milestone-cap"></div>
+              <div class="milestone-body">SSLC</div>
+            </div>
+            <div class="timeline-content tank-badge-card">
+              <span class="rivet rivet-tl"></span><span class="rivet rivet-tr"></span>
+              <span class="rivet rivet-bl"></span><span class="rivet rivet-br"></span>
+              <span class="timeline-period">Secondary School Education</span>
+              <h3 class="timeline-degree">Secondary School Leaving Certificate (SSLC)</h3>
+              <p class="timeline-institution">Karnataka Secondary Education Examination Board (KSEEB)</p>
+              <div class="timeline-score">
+                <span>Academic Score:</span>
+                <strong>63.68%</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Certifications Section (Stamped VIN Specification Plates)
+         ========================================================================== -->
+    <section id="certifications" class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">05 // Stamped Credentials</span>
+          <h2 class="section-title">Certifications</h2>
+          <p class="section-description">
+            Verified industry and technical credentials in cloud architecture, machine learning, databases, and AI agent systems.
+          </p>
+          <div class="section-divider" aria-hidden="true">
+            <span class="divider-line"></span>
+            <span class="divider-medallion"></span>
+            <span class="divider-line"></span>
+          </div>
+        </div>
+
+        <div class="cert-grid">
+          <!-- Cert 1 -->
+          <div class="vin-plate-card reveal delay-1">
+            <span class="rivet rivet-tl"></span><span class="rivet rivet-tr"></span>
+            <span class="rivet rivet-bl"></span><span class="rivet rivet-br"></span>
+            <div class="vin-plate-header">
+              <div class="vin-plate-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4 0-2.05 1.53-3.76 3.56-3.97l1.07-.11.5-.95C8.08 7.14 9.94 6 12 6c2.62 0 4.88 1.86 5.39 4.43l.3 1.5 1.53.11c1.56.1 2.78 1.41 2.78 2.96 0 1.65-1.35 3-3 3z"/>
+                </svg>
+              </div>
+              <span class="vin-issuer-tag">Microsoft</span>
+            </div>
+            <h3 class="vin-plate-title">Microsoft Azure Fundamentals</h3>
+            <div class="vin-plate-footer">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>Verified Credential</span>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="vin-plate-card reveal delay-2">
+            <span class="rivet rivet-tl"></span><span class="rivet rivet-tr"></span>
+            <span class="rivet rivet-bl"></span><span class="rivet rivet-br"></span>
+            <div class="vin-plate-header">
+              <div class="vin-plate-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
+                </svg>
+              </div>
+              <span class="vin-issuer-tag">Microsoft</span>
+            </div>
+            <h3 class="vin-plate-title">Deep Learning Fundamentals</h3>
+            <div class="vin-plate-footer">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>Verified Credential</span>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="vin-plate-card reveal delay-3">
+            <span class="rivet rivet-tl"></span><span class="rivet rivet-tr"></span>
+            <span class="rivet rivet-bl"></span><span class="rivet rivet-br"></span>
+            <div class="vin-plate-header">
+              <div class="vin-plate-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2C6.48 2 2 4.02 2 6.5v11C2 19.98 6.48 22 12 22s10-2.02 10-4.5v-11C22 4.02 17.52 2 12 2zm0 2c4.41 0 8 1.34 8 2.5S16.41 9 12 9s-8-1.34-8-2.5S7.59 4 12 4zm8 13.5c0 1.16-3.59 2.5-8 2.5s-8-1.34-8-2.5V14.2c1.94 1.25 4.8 1.8 8 1.8s6.06-.55 8-1.8v3.3zm0-4.5c0 1.16-3.59 2.5-8 2.5s-8-1.34-8-2.5V9.7c1.94 1.25 4.8 1.8 8 1.8s6.06-.55 8-1.8v3.3z"/>
+                </svg>
+              </div>
+              <span class="vin-issuer-tag">MongoDB</span>
+            </div>
+            <h3 class="vin-plate-title">Introduction to MongoDB</h3>
+            <div class="vin-plate-footer">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>Verified Credential</span>
+            </div>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="vin-plate-card reveal delay-1">
+            <span class="rivet rivet-tl"></span><span class="rivet rivet-tr"></span>
+            <span class="rivet rivet-bl"></span><span class="rivet rivet-br"></span>
+            <div class="vin-plate-header">
+              <div class="vin-plate-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/>
+                </svg>
+              </div>
+              <span class="vin-issuer-tag">Kaggle</span>
+            </div>
+            <h3 class="vin-plate-title">Introduction to Machine Learning</h3>
+            <div class="vin-plate-footer">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>Verified Credential</span>
+            </div>
+          </div>
+
+          <!-- Cert 5 -->
+          <div class="vin-plate-card reveal delay-2">
+            <span class="rivet rivet-tl"></span><span class="rivet rivet-tr"></span>
+            <span class="rivet rivet-bl"></span><span class="rivet rivet-br"></span>
+            <div class="vin-plate-header">
+              <div class="vin-plate-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+                </svg>
+              </div>
+              <span class="vin-issuer-tag">Kaggle</span>
+            </div>
+            <h3 class="vin-plate-title">Intermediate Machine Learning</h3>
+            <div class="vin-plate-footer">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>Verified Credential</span>
+            </div>
+          </div>
+
+          <!-- Cert 6 -->
+          <div class="vin-plate-card reveal delay-3">
+            <span class="rivet rivet-tl"></span><span class="rivet rivet-tr"></span>
+            <span class="rivet rivet-bl"></span><span class="rivet rivet-br"></span>
+            <div class="vin-plate-header">
+              <div class="vin-plate-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 9.2h3V19H5zM10.6 5h2.8v14h-2.8zm5.6 8H19v6h-2.8z"/>
+                </svg>
+              </div>
+              <span class="vin-issuer-tag">Kaggle</span>
+            </div>
+            <h3 class="vin-plate-title">Data Visualization</h3>
+            <div class="vin-plate-footer">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>Verified Credential</span>
+            </div>
+          </div>
+
+          <!-- Cert 7 -->
+          <div class="vin-plate-card reveal delay-1">
+            <span class="rivet rivet-tl"></span><span class="rivet rivet-tr"></span>
+            <span class="rivet rivet-bl"></span><span class="rivet rivet-br"></span>
+            <div class="vin-plate-header">
+              <div class="vin-plate-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                </svg>
+              </div>
+              <span class="vin-issuer-tag">Google</span>
+            </div>
+            <h3 class="vin-plate-title">Google AI Agent Course</h3>
+            <div class="vin-plate-footer">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <span>Verified Credential</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Contact Section (Workshop Comm & Dashboard Form)
+         ========================================================================== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">06 // Workshop Comm</span>
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-description">
+            Looking for a dedicated Software Developer to join your engineering crew? Let's connect.
+          </p>
+          <div class="section-divider" aria-hidden="true">
+            <span class="divider-line"></span>
+            <span class="divider-medallion"></span>
+            <span class="divider-line"></span>
+          </div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Channels -->
+          <div class="contact-channels reveal delay-1">
+            <a href="mailto:nakeeb.201@gmail.com" class="contact-channel-item" aria-label="Send email to nakeeb.201@gmail.com">
+              <div class="contact-channel-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+              </div>
+              <div class="contact-channel-details">
+                <span class="contact-channel-label">Email Channel</span>
+                <span class="contact-channel-value">nakeeb.201@gmail.com</span>
+              </div>
+            </a>
+
+            <a href="tel:+917760817363" class="contact-channel-item" aria-label="Call +91 7760817363">
+              <div class="contact-channel-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                </svg>
+              </div>
+              <div class="contact-channel-details">
+                <span class="contact-channel-label">Phone Channel</span>
+                <span class="contact-channel-value">+91 7760817363</span>
+              </div>
+            </a>
+
+            <a href="https://linkedin.com/in/a-m-nakeeb-72b490292" target="_blank" rel="noopener noreferrer" class="contact-channel-item" aria-label="Connect on LinkedIn">
+              <div class="contact-channel-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                </svg>
+              </div>
+              <div class="contact-channel-details">
+                <span class="contact-channel-label">LinkedIn Dispatch</span>
+                <span class="contact-channel-value">linkedin.com/in/a-m-nakeeb-72b490292</span>
+              </div>
+            </a>
+
+            <a href="https://github.com/AMnakeeb" target="_blank" rel="noopener noreferrer" class="contact-channel-item" aria-label="Check GitHub profile">
+              <div class="contact-channel-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+              </div>
+              <div class="contact-channel-details">
+                <span class="contact-channel-label">GitHub Repos</span>
+                <span class="contact-channel-value">github.com/AMnakeeb</span>
+              </div>
+            </a>
+
+            <div class="contact-channel-item">
+              <div class="contact-channel-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+                </svg>
+              </div>
+              <div class="contact-channel-details">
+                <span class="contact-channel-label">Home Base</span>
+                <span class="contact-channel-value">Mangalore, Karnataka, India</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Dashboard Form with Formspree Placeholder & Mailto Fallback -->
+          <div class="contact-form-container tank-badge-card reveal delay-2">
+            <span class="rivet rivet-tl"></span><span class="rivet rivet-tr"></span>
+            <span class="rivet rivet-bl"></span><span class="rivet rivet-br"></span>
+
+            <!-- Replace YOUR_FORMSPREE_ENDPOINT with your Formspree ID -->
+            <form id="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST">
+              <div class="form-group">
+                <label for="form-name" class="form-label">Full Name</label>
+                <input type="text" id="form-name" name="name" class="form-input" placeholder="Your name" required autocomplete="name">
+              </div>
+
+              <div class="form-group">
+                <label for="form-email" class="form-label">Email Address</label>
+                <input type="email" id="form-email" name="email" class="form-input" placeholder="your.email@example.com" required autocomplete="email">
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject" class="form-label">Subject</label>
+                <input type="text" id="form-subject" name="subject" class="form-input" placeholder="Software Developer Opportunity / Discussion" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">Message</label>
+                <textarea id="form-message" name="message" class="form-textarea" rows="4" placeholder="Briefly describe your team, project, or role requirements..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-badge-primary" style="width: 100%;">
+                <span>Send Dispatch</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                </svg>
+              </button>
+
+              <div class="form-fallback">
+                Prefer direct client email? 
+                <button type="button" id="email-fallback-btn" style="color: var(--brass); text-decoration: underline; background: none; border: none; font-size: inherit; cursor: pointer; padding: 0;">
+                  Click here for mailto: fallback
+                </button>
+              </div>
+
+              <div id="form-status" class="form-status" role="alert"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       Footer ("Built in Mangalore" with Classic Motorcycle Line Art)
+       ========================================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-brand-title">A M Nakeeb</span>
+          <span class="footer-brand-subtitle">Software Developer &bull; B.E. in AI &amp; ML</span>
+        </div>
+
+        <ul class="footer-links" aria-label="Footer quick navigation">
+          <li><a href="#hero" class="footer-link">Home</a></li>
+          <li><a href="#about" class="footer-link">About</a></li>
+          <li><a href="#skills" class="footer-link">Skills</a></li>
+          <li><a href="#projects" class="footer-link">Projects</a></li>
+          <li><a href="#education" class="footer-link">Education</a></li>
+          <li><a href="#certifications" class="footer-link">Certifications</a></li>
+          <li><a href="#contact" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-built-in">
+          <!-- Hand-crafted Motorcycle Silhouette Line Illustration -->
+          <svg class="footer-bike-svg" viewBox="0 0 88 44" aria-hidden="true">
+            <!-- Front wheel spoke circle -->
+            <circle cx="70" cy="28" r="12" />
+            <circle cx="70" cy="28" r="3" fill="#c9ccd1" />
+            <!-- Rear wheel spoke circle -->
+            <circle cx="18" cy="28" r="12" />
+            <circle cx="18" cy="28" r="3" fill="#c9ccd1" />
+            <!-- Teardrop tank & frame line -->
+            <path d="M 68 28 L 54 8 L 48 8" />
+            <!-- Handlebar & mirror -->
+            <path d="M 52 8 L 48 4 M 48 4 L 46 2" />
+            <!-- Tank curve -->
+            <path d="M 50 12 Q 40 8 32 12 Q 26 15 28 18 L 50 14 Z" stroke="#efe3c8" />
+            <!-- Sprung Seat -->
+            <path d="M 32 15 Q 24 14 20 18" stroke="#b08d57" />
+            <!-- Engine block / crankcase outline -->
+            <rect x="33" y="18" width="13" height="11" rx="2" />
+            <!-- Long bottle exhaust pipe -->
+            <path d="M 43 28 L 10 28" stroke="#efe3c8" />
+          </svg>
+          <span>Crafted in Mangalore, India &bull; Inspired by the Classic Royal Enfield</span>
+        </div>
+
+        <p>&copy; 2026 A M Nakeeb. All rights reserved.</p>
+
+        <button id="back-to-top" class="back-to-top" aria-label="Scroll back to top">
+          <span>Top</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container for Placeholders -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <!-- Royal Enfield Bullet 350cc 3D Interactive HUD Pill -->
+  <aside class="bike-hud-badge" id="bike-hud-pill" aria-label="3D Royal Enfield Bullet 350 Controls" title="Drag mouse or touch anywhere to rotate Bullet 350 in 360°">
+    <span class="bike-hud-pulse" aria-hidden="true"></span>
+    <span class="bike-hud-icon" aria-hidden="true">🏍️</span>
+    <span class="bike-hud-text"><strong>Bullet 350cc</strong> 3D Design &bull; Drag to Rotate 360&deg;</span>
+  </aside>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
