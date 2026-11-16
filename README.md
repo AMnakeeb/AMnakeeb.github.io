@@ -17,11 +17,11 @@ Designed around a classic **Royal Enfield motorcycle aesthetic**, drawing direct
 
 ## 🌟 Key Features
 
-1. **Interactive 3D Background & Isolated Bike Showcase**:
-   - Clean, interactive 3D canvas background with smooth perspective depth and mouse parallax.
-   - Features `assets/bike-cutout.png` with transparent background cutout, metallic drop-shadow, and instant 3D design / bike toggle.
+1. **Full-Bleed Motorcycle Hero with Ken Burns Drift**:
+   - Features `assets/bike.jpg` (top 8% cropped to remove cut-off text) and optimized `assets/bike.webp` fallback.
+   - Multi-stop vignette gradient ensuring text contrast remains WCAG AA compliant over the image.
    - Cast-badge buttons with cream fill, chrome borders, and red hover state.
-   - Kickstand/odometer inspired *"Cruise Down"* indicator.
+   - Mechanical odometer-styled *"Scroll Down"* indicator.
 
 2. **Speedometer "Engine Start" Ignition Loader**:
    - Vintage Royal Enfield speedometer dial with red needle sweeping from 0 to 140 km/h.
@@ -62,8 +62,8 @@ portfolio/
 ├── js/
 │   └── main.js           # Vanilla JS (Speedometer loader, fuel gauge, 3D canvas, typewriter, scrollspy)
 ├── assets/
-│   ├── bike-cutout.png   # Transparent cutout of Royal Enfield Bullet 350 (background removed)
-│   ├── bike.jpg          # User's classic Royal Enfield motorcycle photograph
+│   ├── bike.jpg          # Cropped classic Royal Enfield motorcycle photograph
+│   ├── bike.webp         # High-efficiency WebP version for fast loading
 │   ├── favicon.svg       # Custom brass & chrome heritage monogram crest
 │   └── Resume.pdf        # Verified downloadable resume document
 └── README.md             # Documentation & deployment guide
