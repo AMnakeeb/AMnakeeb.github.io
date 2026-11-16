@@ -213,6 +213,14 @@ button {
 .section {
   padding: 104px 0;
   position: relative;
+  background-color: var(--bg-deep);
+  /* Brushed metal micro-texture */
+  background-image: 
+    repeating-linear-gradient(90deg, 
+      rgba(201, 204, 209, 0.012) 0px, 
+      rgba(201, 204, 209, 0.012) 1px, 
+      transparent 1px, 
+      transparent 4px);
 }
 
 @media (max-width: 768px) {
@@ -221,17 +229,18 @@ button {
   }
 }
 
-/* Section Alternating Background */
+/* Section Alternating Background: Leather stitching & faint spoked-wheel line art */
 .section-alt {
-  background-color: rgba(15, 15, 17, 0.76);
+  background-color: #101013;
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  /* Leather-seat diamond stitching micro-pattern */
+  /* Faint spoked-wheel line art & leather-seat diamond stitching */
   background-image:
+    radial-gradient(circle at 92% 50%, rgba(201, 204, 209, 0.025) 0%, rgba(201, 204, 209, 0.02) 160px, transparent 165px),
     linear-gradient(45deg, rgba(201, 204, 209, 0.02) 25%, transparent 25%, transparent 75%, rgba(201, 204, 209, 0.02) 75%),
     linear-gradient(45deg, rgba(201, 204, 209, 0.02) 25%, transparent 25%, transparent 75%, rgba(201, 204, 209, 0.02) 75%);
-  background-size: 28px 28px;
-  background-position: 0 0, 14px 14px;
+  background-size: auto, 28px 28px, 28px 28px;
+  background-position: center, 0 0, 14px 14px;
 }
 
 /* Persistent Interactive 3D Background Canvas */
@@ -665,7 +674,7 @@ main,
   overflow: hidden;
 }
 
-/* Bike Photo Background Container (Fades in when Photo Mode is toggled) */
+/* Full-Screen Bike Photo Background Container */
 .hero-bg-container {
   position: absolute;
   inset: 0;
@@ -674,31 +683,39 @@ main,
   overflow: hidden;
 }
 
+.hero-bg-container picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .hero-bike-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 70% center;
-  opacity: 0;
-  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  object-position: 72% center;
+  opacity: 0.88;
   animation: kenBurns 28s ease-in-out infinite alternate;
-}
-
-body.photo-mode-active .hero-bike-img {
-  opacity: 0.72;
+  transform-origin: 70% center;
+  will-change: transform;
 }
 
 @keyframes kenBurns {
   0% {
     transform: scale(1) translate(0, 0);
   }
-
   50% {
-    transform: scale(1.06) translate(-1%, -1%);
+    transform: scale(1.05) translate(-1%, -1%);
   }
-
   100% {
     transform: scale(1.02) translate(1%, 0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-bike-img {
+    object-position: 65% center;
+    opacity: 0.82;
   }
 }
 
@@ -710,27 +727,28 @@ body.photo-mode-active .hero-bike-img {
     /* Horizontal readability gradient: Heavy black on left for text */
     linear-gradient(to right,
       rgba(11, 11, 12, 0.96) 0%,
-      rgba(11, 11, 12, 0.88) 38%,
-      rgba(11, 11, 12, 0.55) 70%,
-      rgba(11, 11, 12, 0.35) 100%),
+      rgba(11, 11, 12, 0.88) 40%,
+      rgba(11, 11, 12, 0.52) 72%,
+      rgba(11, 11, 12, 0.28) 100%),
     /* Vertical integration gradient */
     linear-gradient(to bottom,
-      rgba(11, 11, 12, 0.5) 0%,
-      rgba(11, 11, 12, 0.6) 65%,
+      rgba(11, 11, 12, 0.6) 0%,
+      transparent 22%,
+      transparent 70%,
       #0b0b0c 100%);
+  pointer-events: none;
 }
 
 @media (max-width: 768px) {
-  body.photo-mode-active .hero-bike-img {
-    object-position: center center;
-    opacity: 0.7;
-  }
-
   .hero-overlay {
     background:
       linear-gradient(to bottom,
-        rgba(11, 11, 12, 0.88) 0%,
-        rgba(11, 11, 12, 0.78) 45%,
+        rgba(11, 11, 12, 0.94) 0%,
+        rgba(11, 11, 12, 0.84) 45%,
+        rgba(11, 11, 12, 0.6) 75%,
+        #0b0b0c 100%);
+  }
+}
         #0b0b0c 100%);
   }
 }
@@ -1331,12 +1349,20 @@ body.photo-mode-active .hero-bike-img {
 }
 
 /* ==========================================================================
-   Featured Projects (Tank Badge Custom Builds)
+   Featured Projects (Tank Badge Custom Builds - Balanced 2-Card Layout)
    ========================================================================== */
 .projects-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 36px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  align-items: stretch;
+}
+
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
 }
 
 .project-badge-card {
@@ -1344,7 +1370,7 @@ body.photo-mode-active .hero-bike-img {
   background: var(--bg-card);
   border: 1px solid var(--chrome-border);
   border-radius: var(--radius-lg);
-  padding: 40px;
+  padding: 38px 34px;
   box-shadow:
     inset 0 0 0 1px rgba(255, 255, 255, 0.04),
     0 12px 36px rgba(0, 0, 0, 0.7);
@@ -1353,6 +1379,13 @@ body.photo-mode-active .hero-bike-img {
   flex-direction: column;
   justify-content: space-between;
   gap: 24px;
+  height: 100%;
+}
+
+@media (max-width: 600px) {
+  .project-badge-card {
+    padding: 28px 22px;
+  }
 }
 
 .project-badge-card:hover {
@@ -1361,6 +1394,12 @@ body.photo-mode-active .hero-bike-img {
     0 16px 48px rgba(0, 0, 0, 0.9),
     0 0 20px rgba(179, 38, 30, 0.25);
   transform: translateY(-4px);
+}
+
+.project-card-main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .project-meta-top {
