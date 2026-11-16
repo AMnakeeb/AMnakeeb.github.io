@@ -1,0 +1,114 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+6 0 obj
+<< /Length 2812 >>
+stream
+BT
+/F2 20 Tf
+50 745 Td
+(A M NAKEEB) Tj
+/F1 10.5 Tf
+0 -18 Td
+(Aspiring Software Developer | Final-Year B.E. in AI & ML) Tj
+0 -14 Td
+(Email: nakeeb.201@gmail.com | Phone: +91 7760817363 | Location: Mangalore, India) Tj
+0 -14 Td
+(LinkedIn: linkedin.com/in/a-m-nakeeb-72b490292 | GitHub: github.com/AMnakeeb) Tj
+/F2 11 Tf
+0 -24 Td
+(PROFESSIONAL SUMMARY) Tj
+/F1 9.5 Tf
+0 -14 Td
+(Final-year B.E. student in AI & ML at Yenepoya Institute of Technology with hands-on project experience in Python, C,) Tj
+0 -12 Td
+(and core AI/ML architectures. Seeking a Software Developer role to apply problem-solving skills to real-world software.) Tj
+/F2 11 Tf
+0 -20 Td
+(TECHNICAL SKILLS) Tj
+/F1 9.5 Tf
+0 -14 Td
+(- Languages: Python, C) Tj
+0 -12 Td
+(- Domains: Artificial Intelligence, Machine Learning, Deep Learning, Natural Language Processing (NLP)) Tj
+0 -12 Td
+(- Tools & Platforms: Microsoft Azure Fundamentals, MongoDB, Streamlit, Google Gemini Pro API) Tj
+0 -12 Td
+(- Professional Soft Skills: Problem-solving, Teamwork, Continuous Learning) Tj
+/F2 11 Tf
+0 -20 Td
+(KEY PROJECTS) Tj
+/F2 9.5 Tf
+0 -14 Td
+(1. Multimodal Cognitive Load Detection & Adaptive Learning System [Team Major Project, Phase-II]) Tj
+/F1 9 Tf
+0 -12 Td
+(   Fuses gaze tracking, facial blendshapes, rPPG, and typing dynamics via a cross-modal Transformer.) Tj
+0 -11 Td
+(   Integrates a local LLM that adaptively rewrites learning content in real time. Guide: Ms. M P Nisha.) Tj
+/F2 9.5 Tf
+0 -14 Td
+(2. AI-Driven Fish School Detection for Sustainable Fisheries [Functional Prototype & Research Paper]) Tj
+/F1 9 Tf
+0 -12 Td
+(   Real-time ML prototype processing sonar data to pinpoint fish schools for sustainable harvesting.) Tj
+0 -11 Td
+(   Integrated architecture combining CNN/YOLO detection, LSTM breeding forecasts, and IoT pollution monitoring.) Tj
+/F2 9.5 Tf
+0 -14 Td
+(3. HealthAssist: AI-Based Medical Consultation & Report Summarization [AI Healthcare Assistant]) Tj
+/F1 9 Tf
+0 -12 Td
+(   NLP medical diagnostic summarization and symptom consultation using Streamlit and Google Gemini Pro API.) Tj
+0 -11 Td
+(   Incorporates patient personalization, rigorous privacy safeguards, and emergency-case triage detection.) Tj
+/F2 11 Tf
+0 -20 Td
+(EDUCATION) Tj
+/F1 9 Tf
+0 -13 Td
+(- B.E. in Artificial Intelligence & Machine Learning - Yenepoya Institute of Technology, Mangalore | CGPA: 7.23 | Expected 2027) Tj
+0 -12 Td
+(- Pre-University Course (PUC) - 60.33%) Tj
+0 -12 Td
+(- Secondary School Leaving Certificate (SSLC) - 63.68%) Tj
+/F2 11 Tf
+0 -20 Td
+(CERTIFICATIONS) Tj
+/F1 9 Tf
+0 -13 Td
+(- Microsoft Azure Fundamentals | Deep Learning Fundamentals (Microsoft) | Introduction to MongoDB) Tj
+0 -12 Td
+(- Intro to Machine Learning (Kaggle) | Intermediate Machine Learning (Kaggle) | Data Visualization (Kaggle)) Tj
+0 -12 Td
+(- Google AI Agent Course) Tj
+ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000000321 00000 n 
+0000000396 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+3260
+%%EOF

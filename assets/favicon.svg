@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <!-- Metallic Brass & Chrome Gradients -->
+    <linearGradient id="brassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4af37" />
+      <stop offset="50%" stop-color="#b08d57" />
+      <stop offset="100%" stop-color="#8c6d3b" />
+    </linearGradient>
+    <linearGradient id="chromeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="50%" stop-color="#c9ccd1" />
+      <stop offset="100%" stop-color="#64748b" />
+    </linearGradient>
+  </defs>
+
+  <!-- Deep Matte Black Badge Base -->
+  <rect width="64" height="64" rx="14" fill="#0b0b0c" />
+  
+  <!-- Outer Chrome Rim -->
+  <rect x="2" y="2" width="60" height="60" rx="12" fill="none" stroke="url(#chromeGrad)" stroke-width="1.8" />
+  
+  <!-- Inner Brass Pinstripe -->
+  <rect x="5" y="5" width="54" height="54" rx="9" fill="none" stroke="url(#brassGrad)" stroke-width="1" stroke-opacity="0.8" />
+
+  <!-- Corner Rivets -->
+  <circle cx="8" cy="8" r="1.5" fill="url(#brassGrad)" />
+  <circle cx="56" cy="8" r="1.5" fill="url(#brassGrad)" />
+  <circle cx="8" cy="56" r="1.5" fill="url(#brassGrad)" />
+  <circle cx="56" cy="56" r="1.5" fill="url(#brassGrad)" />
+
+  <!-- Heritage Monogram "N" in Cream Serif & Royal Crimson Accent -->
+  <!-- Winged Flanks -->
+  <path d="M12 32 Q22 28 32 30 Q22 36 12 32 Z" fill="url(#brassGrad)" opacity="0.6" />
+  <path d="M52 32 Q42 28 32 30 Q42 36 52 32 Z" fill="url(#brassGrad)" opacity="0.6" />
+
+  <!-- Center Shield / Crest -->
+  <path d="M22 20 L42 20 L38 42 L32 46 L26 42 Z" fill="#141414" stroke="url(#chromeGrad)" stroke-width="1.2" />
+
+  <!-- Heritage Monogram N -->
+  <text x="32" y="36" font-family="'Playfair Display', Georgia, serif" font-size="18" font-weight="900" fill="#efe3c8" text-anchor="middle" dominant-baseline="middle">N</text>
+  
+  <!-- Red Crown Pip -->
+  <circle cx="32" cy="18" r="2.2" fill="#b3261e" stroke="#efe3c8" stroke-width="0.8" />
+</svg>
